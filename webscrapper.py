@@ -10,7 +10,8 @@ def create_custom_hn(links, votes):
     hn = []
     for idx, item in enumerate(links):
         title = links[idx].getText()
-        hn.append(title)
+        href = links[idx].get('href', None)
+        hn.append({'title': title, 'link': href})
     return hn
 
 print(create_custom_hn(links,votes))

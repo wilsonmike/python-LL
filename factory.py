@@ -10,5 +10,11 @@ def main():
 
     print(st)
 
+    # ternary operator
+    st = "x is less than y" if (x < y) else "x is greater than or equal to y"
+    print(st)
+
+
+
 if __name__ == "__main__":
     main()

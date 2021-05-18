@@ -4,16 +4,18 @@ from bs4 import BeautifulSoup
 res = requests.get('https://news.ycombinator.com/news')
 soup = BeautifulSoup(res.text, 'html.parser')
 links = soup.select('.storylink')
-votes = soup.select('.score')
+subtext = soup.select('.subtext')
 
-def create_custom_hn(links, votes):
+def create_custom_hn(links, subtext):
     hn = []
     for idx, item in enumerate(links):
         title = links[idx].getText()
         href = links[idx].get('href', None)
-        points = int(votes[idx].getText().replace(' points', ''))
-        print(points)
-        hn.append({'title': title, 'link': href})
+        vote = subtext[idx].select('.score')
+        if len(vote):
+            points = int(vote[0].getText().replace(' points', ''))
+            print(points)
+            hn.append({'title': title, 'link': href})
     return hn
 
-create_custom_hn(links,votes)
+create_custom_hn(links,subtext)

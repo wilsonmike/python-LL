@@ -4,9 +4,9 @@
 
 # day one username generator
 
-city = input("What's the name of the city you grew up in?\n")
-pet = input("What's your pet's name?\n")
-print("Your username could be " + city + " " + pet)
+    # city = input("What's the name of the city you grew up in?\n")
+    # pet = input("What's your pet's name?\n")
+    # print("Your username could be " + city + " " + pet)
 
 #day two tip calculator
 
@@ -15,7 +15,9 @@ total_bill = float(input("What was the total bill? $"))
 tip = int(input("How much tip would you like to give? 10, 12, or 15? "))
 people = int(input("How many people are going to split the bill? "))
 bill_with_tip = tip / 100 * total_bill + total_bill
-print(bill_with_tip)
+total_bill = bill_with_tip / people
+round(total_bill, 2)
+print(f"Each person should pay {total_bill}")
 
 #fizzbuzz practice 
 

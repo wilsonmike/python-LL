@@ -1,3 +1,5 @@
+import os
+clear = lambda: os.system('cls')
 # programming = ['React','Angular','C++','Python','Go']
 # for items in programming:
 #     print(items)
@@ -59,3 +61,17 @@ print(programming_dictionary["React"])
 #adding new items to dictionary
 programming_dictionary["C++"] = "Robust documentation, seems to be the leader in self driving vehicles."
 print(programming_dictionary)
+
+#actual day 9 project
+
+bids = {}
+bidding_finished = False
+while not bidding_finished:
+    name = input("What is your name? ")
+    price = input("What is your bid? $")
+    bids[name] = price
+    should_continue = input("Are there any other bidders? Type 'yes' or 'no'. ")
+    if should_continue == "no":
+        bidding_finished = True
+    elif should_continue == "yes":
+        clear()

@@ -53,4 +53,9 @@ programming_dictionary = {
     "React" : "Super in demand but frameworks are CRUD bound meh.",
     "Python" : "Becoming a tool for everything| ML, AI, and even the web. +1"
 }
+#retreiving items from dictionary
 print(programming_dictionary["React"])
+
+#adding new items to dictionary
+programming_dictionary["C++"] = "Robust documentation, seems to be the leader in self driving vehicles."
+print(programming_dictionary)

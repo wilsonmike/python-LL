@@ -30,3 +30,17 @@ for char in range(1, nr_numbers + 1):
     password += random.choice(numbers)
 
 print(password)
+
+#With randomization
+# password_list = []
+
+# for char in range(1, nr_letters + 1):
+#     password_list.append(random.choice(letters))
+    
+# for char in range(1, nr_symbols + 1):
+#     password_list.append(random.choice(symbols))
+    
+# for char in range(1, nr_numbers + 1):
+#     password_list.append(random.choice(numbers))
+
+# print(password)

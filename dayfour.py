@@ -1,4 +1,7 @@
 programming = ['React','Angular','C++','Python','Go']
 for items in programming:
-    print('Best programming language')
+    print(items)
     
+
+for number in range(1,11):
+    print(number)

@@ -10,14 +10,14 @@
 
 #day two tip calculator
 
-print("Welcome to the tip calculator")
-total_bill = float(input("What was the total bill? $"))
-tip = int(input("How much tip would you like to give? 10, 12, or 15? "))
-people = int(input("How many people are going to split the bill? "))
-bill_with_tip = tip / 100 * total_bill + total_bill
-total_bill = bill_with_tip / people
-round(total_bill, 2)
-print(f"Each person should pay {total_bill}")
+    # print("Welcome to the tip calculator")
+    # total_bill = float(input("What was the total bill? $"))
+    # tip = int(input("How much tip would you like to give? 10, 12, or 15? "))
+    # people = int(input("How many people are going to split the bill? "))
+    # bill_with_tip = tip / 100 * total_bill + total_bill
+    # total_bill = bill_with_tip / people
+    # round(total_bill, 2)
+    # print(f"Each person should pay {total_bill}")
 
 #fizzbuzz practice 
 
@@ -31,3 +31,7 @@ print(f"Each person should pay {total_bill}")
 #     else:
 #         print(num)
 
+
+# day 3 treasure console app
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm? "))
